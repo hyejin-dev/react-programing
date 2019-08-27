@@ -66,8 +66,8 @@ async1(start, result => {
     Promise.reject('err').then(null, error => { console.log(error) }); //에러 O
     ```
 
-    `onFulfilled` : Promise가 수행될 때 호출되는 Function으로, 이행 값(fulfillment value) 하나를 인수로 받습니다.  
-    `onRejected` : Promise가 거부될 때 호출되는 Function으로, 거부 이유(rejection reason) 하나를 인수로 받습니다.
+    `onFulfilled` : Promise가 수행될 때 호출되는 Function, 이행 값(fulfillment value) 하나를 인수로 받음  
+    `onRejected` : Promise가 거부될 때 호출되는 Function, 거부 이유(rejection reason) 하나를 인수로 받음
 
 <br>
 
@@ -170,4 +170,4 @@ Promise.all([aaa1(), aaa2()]).then(([data1, data2]) => {
 ### 주의할 점
 
 - return 키워드 깜박하지않기
-- 프로미스는 불변 객체 라는 사실 명심하기
+- 프로미스는 [불변 객체](2_0_단어정리.md#불변객체) 라는 사실 명심하기

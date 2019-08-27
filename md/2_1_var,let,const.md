@@ -1,6 +1,6 @@
 ## var
 
-- 함수형 [스코프](2장_단어정리.md#스코프)  
+- 함수형 [스코프](2_0_단어정리.md#스코프)  
 
 ```js
 var hello='hello!'  // 전역변수
@@ -57,7 +57,7 @@ b = 1;
 
   변수가 함수내에서 정의 -> 함수의 최상위 선언  
   변수가 함수 바깥에서 정의 -> 전역 컨텍스트의 최상위 선언  
-  [임시적 사각지대 TDZ](2장_단어정리.md#임시적) -> 에러 X , undefined 
+  [임시적 사각지대 TDZ](2_0_단어정리.md#임시적) -> 에러 X , undefined 
 
 ```js
 function aaa() {
@@ -110,7 +110,7 @@ console.log(bar); // ReferenceError: bar is not defined
 
 <br>
 
-- [임시적 사각지대 TDZ](2장_단어정리.md#임시적) -> 에러 O (호이스팅 되는것을 보여줌)
+- [임시적 사각지대 TDZ](2_0_단어정리.md#임시적) -> 에러 O (호이스팅 되는것을 보여줌)
 
 ```js
 console.log(x);  //TDZ에 의해 ReferenceError가 발생
